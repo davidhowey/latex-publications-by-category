@@ -9,7 +9,7 @@ Academics are often asked to produce lists of their own publications, usually fo
 ## Workflow
 
 * First, head to [Scopus](https://www.scopus.com) and find your author profile (it should be automatically created by Scopus). You can then [claim ownership](https://www.elsevier.com/en-gb/products/scopus/author-profiles) of it.
-* Once this is working, you should see a fairly accurate list of your publications. Login, then choose 'export all' and download a BibTex file of all your papers. Probably the default citation information is fine (but adjust as necessary).
+* Once this is working, you should see a fairly accurate list of your publications. Login, then choose 'export all' and download a BibTex file of all your papers. Probably the default information is fine (but adjust as necessary).
 * Edit the BibTex file to remove any junk that scopus puts at the top, or resolve errors such as spaces in keys. If you want, further edit the BibTex file to your needs - for example, if you only need to show publications from certain years. The easiest way to do checking and editing is with a tool such as [BibDesk](https://bibdesk.sourceforge.io/), which comes with the default Mac LaTex install. BibDesk will also show duplicate keys entries, etc.
 * Get rid of any unicode gremlins in the bib file (thanks, scopus, grrr). For example, search for this regular expression in VSCode: `[^\x00-\x7f]`.
 * To show conference abstracts separately, add an entry to any conference abstract (should be `@inproceedings`) that says `keywords={confabstract}`.
