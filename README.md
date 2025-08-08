@@ -4,7 +4,7 @@ Simple Latex code and workflow to list your publications by category
 
 ## Description
 
-Academics are often asked to produce lists of their own publications, usually for internal documentation, promotion applications, etc. It's feasible to create these lists manually when you only have a few papers, but as the number grows, this task requires automation. There's probably many different ways to do this, but this small repository details the way that I've found works for me.
+Academics are often asked to produce lists of their own publications, usually for internal documentation, promotion applications, etc. It's feasible to create these lists manually when you only have a few papers, but as the number grows, this task cries out for automation. There's probably many different ways to do this, but this small repository details the way that I've found works for me.
 
 ## Workflow
 
