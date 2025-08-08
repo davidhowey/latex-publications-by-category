@@ -1,0 +1,34 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=2cm, a4paper]{geometry}   % set up margins, papersize etc.
+\usepackage[sorting=ydnt, style=ieee, url=false, maxbibnames=50, backend=biber,defernumbers]{biblatex}  % change as required
+\addbibresource{scopus.bib}  % make sure this points to the correctly named bib file!
+
+% choose helvetica font:
+\usepackage[scaled=1]{helvet}
+\renewcommand*\familydefault{\sfdefault}
+
+%\defbibfilter{FilterOne}{category=cat1}
+
+\title{Howey Publications}  % title, edit as necessary
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+\vspace{-2cm}  % play with spacing
+
+% Make the bibliography
+\nocite{*}  % cite all bib items, without requiring text to cite from
+% Sections:
+\printbibliography[type={article},title={Journal Articles},notkeyword={other},notkeyword={patent}] % journal papers
+\printbibliography[notkeyword={confabstract},type={inproceedings},title={Conference Papers}] % conference papers
+\printbibliography[keyword={confabstract},type={inproceedings},title={Conference Abstracts}] % conference abstracts
+\printbibliography[keyword={other},title={Other}] % other stuff (article type)
+\printbibliography[keyword={patent},title={Patents and applications}] % patents (article type)
+
+
+\end{document}
+
+
