@@ -14,6 +14,7 @@ Academics are often asked to produce lists of their own publications, usually fo
 * Get rid of any unicode gremlins in the bib file (thanks, scopus, grrr). For example, search for this regular expression in VSCode: `[^\x00-\x7f]`.
 * To show conference abstracts separately, add an entry to any conference abstract (should be `@inproceedings`) that says `keywords={confabstract}`.
 * To show patents separately, add them manually as `@article` in the `.bib` and include `keywords={patent}` in each.
+* For any other types of documents (e.g., opinion pieces, etc.) add them manually as `@article` in the `.bib` and include `keywords={other}` in each.
 * Use the LaTex code in this repository (`main.tex`) to compile your publications list (e.g. on overleaf, or whatever install you like). Make sure you name the `.bib` file correctly in the line `\addbibresource{scopus.bib}`. That's it! An example scopus file and pdf is in this repository.
 * Check the resulting pdf and modify BibTex entries if necessary (e.g., capitalisation issues). Rinse and repeat!
 
