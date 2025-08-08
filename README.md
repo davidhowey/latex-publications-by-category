@@ -10,7 +10,7 @@ Academics are often asked to produce lists of their own publications, usually fo
 
 * First, head to [Scopus](https://www.scopus.com) and find your author profile (it should be automatically created by Scopus). You can then [claim ownership](https://www.elsevier.com/en-gb/products/scopus/author-profiles) of it.
 * Once this is working, you should see a fairly accurate list of your publications. Login, then choose 'export all' and download a BibTex file of all your papers. Probably the default citation information is fine (but adjust as necessary).
-* If necessary, edit the BibTex file - for example, if you only need to show publications from certain years. The easiest way to do this is with a tool such as [BibDesk](https://bibdesk.sourceforge.io/), which comes with the default Mac LaTex install.
+* Edit the BibTex file to remove any junk that scopus puts at the top, or resolve errors such as spaces in keys. If you want, further edit the BibTex file to your needs - for example, if you only need to show publications from certain years. The easiest way to do checking and editing is with a tool such as [BibDesk](https://bibdesk.sourceforge.io/), which comes with the default Mac LaTex install. BibDesk will also show duplicate keys entries, etc.
 * Use the LaTex code in this repository (`main.tex`) to generate your publications list (e.g. on overleaf, or whatever install you like). Make sure you name the bib file correctly in the line `\addbibresource{scopus.bib}`. That's it! An example scopus file and pdf is in this repository.
 
 ## How it works
